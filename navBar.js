@@ -42,10 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // Changing active navigation link based on page in view
 document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname.split("/").pop();
-  console.log(currentPath);
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
-    console.log(link.getAttribute("href"));
     if (link.getAttribute("href") === currentPath) {
       link.classList.add("active");
     } else {

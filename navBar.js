@@ -41,17 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Changing active navigation link based on page in view
 document.addEventListener("DOMContentLoaded", function () {
-  const currentPath = window.location.pathname;
-  console.log(currentUrl);
+  const currentPath = window.location.pathname.split("/").pop();
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     console.log(link.getAttribute("href"));
     if (link.getAttribute("href") === currentPath) {
-      console.log("active");
       link.classList.add("active");
     } else {
       link.classList.remove("active");
-      console.log("inactive");
     }
   });
 });

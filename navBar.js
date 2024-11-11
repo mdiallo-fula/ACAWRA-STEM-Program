@@ -6,20 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top" aria-label="navbar">
   <div class="container-fluid">
     <h2 class="text-white">ACAWRA</h2>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarsExample02"
-      aria-controls="navbarsExample02"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
     <div class="collapse navbar-collapse" id="navbarLinks">
-      <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav me-auto" style="overflow-x:scroll">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.html"
             >STEM Program</a
@@ -28,6 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="nav-item">
           <a class="nav-link" href="volunteer.html"
             >Volunteer</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="parent.html"
+            >Register</a
           >
         </li>
       </ul>
@@ -44,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname.split("/").pop();
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
+    console.log(link.getAttribute("href"));
     if (link.getAttribute("href") === currentPath) {
       link.classList.add("active");
     } else {

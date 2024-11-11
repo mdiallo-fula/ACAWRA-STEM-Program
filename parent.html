@@ -10,8 +10,103 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      /* centering role titles */
+      .course {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    </style>
+    <script src="navBar.js" defer></script>
   </head>
-  <body class="bg-dark">
-    <p class="p-2 text-white">Coming soon!</p>
+  <body class="bg-dark mt-5">
+    <section id="overview" class="text-secondary px-4 py-2 text-center">
+      <div class="bg-black bg-gradient text-secondary p-4 rounded-bottom">
+        <h2 class="display-5 fw-bold text-white">Overview</h2>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5">
+            The STEM Program will roll out in stages, beginning with Math
+            tutoring sessions on November 18. Parents who register their
+            children will receive updates as additional tutoring sessions in
+            Physics, Web Development, and Arduino (robotics) become available.
+            In addition to the tutoring sessions, the program will also offer a
+            recreational activity: basketball games. These games will be open to
+            all high school students enrolled in the program. An indoor
+            basketball court will be provided for 2-3 times a week. All program
+            activities will take place Monday through Friday, from 5 PM to 8 PM,
+            at
+            <a
+              href="https://www.google.com/maps/place/675+Queen+St+S,+Kitchener,+ON+N2M+1A1/@43.4421438,-80.4987086,674m/data=!3m2!1e3!4b1!4m6!3m5!1s0x882bf4f9c782c66d:0x57eca24f88814d85!8m2!3d43.4421438!4d-80.4961337!16s%2Fg%2F11b8v58s_z?authuser=0&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
+              >675 Queen St S, Kitchener, ON N2M 1A1</a
+            >, except for the basketball games. Further details will be sent to
+            registrants during the weekend leading up to November 18.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="courses" class="text-secondary px-4 py-2 text-center">
+      <div class="bg-black bg-gradient text-secondary p-4 rounded-bottom">
+        <h2 class="display-5 fw-bold text-white">Courses</h2>
+        <div
+          id="math-phys"
+          class="course row row-cols-sm-2 row-cols-1 border border-white border-opacity-50 rounded mb-2"
+        >
+          <div class="col-sm-4 text-white course">
+            <h3>Math & Physics</h3>
+          </div>
+          <ul style="list-style-type: disc" class="text-start px-4">
+            <li>Get help mastering concepts taught at school</li>
+            <li>
+              Develop effective study strategies and exam preparation techniques
+            </li>
+            <li>
+              Gain advanced problem solving skills through contest preparation
+              (math only)
+            </li>
+          </ul>
+        </div>
+        <div
+          id="cs"
+          class="course row row-cols-sm-2 row-cols-1 border border-white border-opacity-50 rounded mb-2"
+        >
+          <div class="col-sm-4 text-white course">
+            <h3>Web Development</h3>
+          </div>
+          <ul style="list-style-type: disc" class="text-start px-4">
+            <li>
+              Intoduction to programming with Python (grades 7-9) / JavaScript
+              (grades 10-12)
+            </li>
+            <li>Learn how to create responsive web pages with HTML and CSS</li>
+            <li>
+              Add interactive functionalities to websites with JavaScript
+              (grades 10-12)
+            </li>
+          </ul>
+        </div>
+        <div
+          id="arduino"
+          class="course row row-cols-sm-2 row-cols-1 border border-white border-opacity-50 rounded mb-2"
+        >
+          <div class="col-sm-4 text-white course">
+            <h3>Arduino (robotics)</h3>
+          </div>
+          <ul style="list-style-type: disc" class="text-start px-4">
+            <li>
+              Learn about the electronic components in an ELEGOO UNO Super
+              Starter Kit
+            </li>
+            <li>Use the electronic componenents to build simple circuits</li>
+            <li>Learn how to use the Arduino IDE to program microcontrolers</li>
+          </ul>
+        </div>
+        <a
+          class="btn btn-outline-light btn-lg"
+          href="https://forms.gle/spYh8LwTtmFgHMSLA"
+          >Sign Up Here</a
+        >
+      </div>
+    </section>
   </body>
 </html>

@@ -1,6 +1,0 @@
-/* centering role titles */
-.role {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}

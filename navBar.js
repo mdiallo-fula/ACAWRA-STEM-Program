@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navBar = `
 <div style="position:sticky; top: 0px;">
-  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body mb-1" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
         <h2 class="text-white">ACAWRA</h2>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
   </nav>
-  <div class="text-center bg-primary-subtle rounded p-2">
+  <div class="text-center bg-primary-subtle rounded-bottom p-2">
   Offcial <a href="https://africancanadianassociation.com/ubuntu-kids-club">website</a> updated
   </div>
 </div>

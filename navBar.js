@@ -3,7 +3,8 @@
 // JavaScript code to inject the header
 document.addEventListener("DOMContentLoaded", function () {
   const navBar = `
-  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+<div style="position:sticky; top: 0px;">
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body mb-1" data-bs-theme="dark">
       <div class="container-fluid">
         <h2 class="text-white">ACAWRA</h2>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
   </nav>
-  <div class="alert alert-primary text-center" role="alert">
+  <div class="text-center bg-primary-subtle rounded p-2">
   Offcial <a href="https://africancanadianassociation.com/ubuntu-kids-club">website</a> updated
   </div>
-
+</div>
     `;
   // Inject header content into the body
   document.body.insertAdjacentHTML("afterbegin", navBar);
